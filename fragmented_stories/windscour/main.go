@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/justien/playful/fragmented_stories/windscour/salt"
 	"math/rand"
 	"time"
 )
@@ -9,20 +10,28 @@ import (
 func random(min, max int) int {
 	rand.Seed(time.Now().Unix())
 	return rand.Intn(max-min) + min
-
 }
 
 func main() {
+
 	i := 1
 	for i < 3 {
+		fmt.Println()
+		fmt.Println()
+
 		i++
-		if i == 1 {
-			fmt.Println("\n\nIt is the first day")
-		} else if i == 2 {
-			fmt.Println("\n\nIt is the second day")
-		} else {
-			fmt.Println("\n\n... many, many days")
-		}
+
+		ordinalsuffix := salt.Ordinals(i)
+
+		fmt.Printf("It is the %d%s day\n", i, ordinalsuffix)
+
+		// if i == 1 {
+		// 	fmt.Println("\n\nIt is the first day")
+		// } else if i == 2 {
+		// 	fmt.Println("\n\nIt is the second day")
+		// } else {
+		// 	fmt.Println("\n\n... many, many days")
+		// }
 
 		fmt.Println("walls pitted from many years of grit-bearing winds")
 		fmt.Println("you pass by each day, sometimes a group of children play there")
