@@ -18,8 +18,9 @@ func main() {
 
 	switch {
 	case gemstash < 10:
-		fmt.Printf("Looking for gems in your clothing.\n")
-		fmt.Println("You find", gemstash)
+		fmt.Println("Looking for gems in your clothing.")
+		fmt.Printf("You find %d", gemstash)
+		fmt.Println(".")
 	case gemstash >= 10:
 		fmt.Println("In your pocket, you find", gemstash, "gems.")
 		fmt.Println("Two gems to rub together. Better than yesterday.")
