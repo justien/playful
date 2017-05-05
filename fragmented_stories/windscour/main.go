@@ -25,14 +25,6 @@ func main() {
 
 		fmt.Printf("It is the %d%s day\n", i, ordinalsuffix)
 
-		// if i == 1 {
-		// 	fmt.Println("\n\nIt is the first day")
-		// } else if i == 2 {
-		// 	fmt.Println("\n\nIt is the second day")
-		// } else {
-		// 	fmt.Println("\n\n... many, many days")
-		// }
-
 		fmt.Println("walls pitted from many years of grit-bearing winds")
 		fmt.Println("you pass by each day, sometimes a group of children play there")
 		fmt.Println("you see their shadows, when the sun shines")
