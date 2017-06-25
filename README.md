@@ -1,2 +1,2 @@
 # playful
-A micro sack of my micro projects
+a hologrammatic view
